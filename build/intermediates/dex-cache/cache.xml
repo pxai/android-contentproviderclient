@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\code\tmp\a\AndroidContentProviderClient\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30114700331211139c5bccbba4cbc72d7cabdbbe">
+        <dex dex="C:\code\tmp\a\AndroidContentProviderClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e7b0533748a15a79e7107312aed696c4da142938\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\PELLO_ALTADILL\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\code\tmp\a\AndroidContentProviderClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_542682739f2e11bc753ecfe5474856521f5a3cfa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\code\tmp\a\AndroidContentProviderClient\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7bf75897e8980e4d00acb1270982183f2df92e47">
+        <dex dex="C:\code\tmp\a\AndroidContentProviderClient\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_37c5c072c0a38354a2fc1f3054d3c9155f6aac4a\classes.dex" />
+    </item>
+
+</items>
