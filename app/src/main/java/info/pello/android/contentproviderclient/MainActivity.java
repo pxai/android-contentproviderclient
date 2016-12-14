@@ -10,17 +10,20 @@ import android.database.Cursor;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	
 	private TextView textViewResult;
+	private EditText editText;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		textViewResult = (TextView) findViewById(R.id.textViewResult);
+		editText = (EditText) findViewById(R.id.editText);
 	}
 
 	@Override
@@ -35,10 +38,10 @@ public class MainActivity extends Activity {
 	 * It will try to get data from Content Provider.
 	 * @param v
 	 */
-	public void getData(View v) {
+	public void getAllRows(View v) {
 		Log.d("PELLODEBUG","Client> button pressed.");
 		String result = "";
-		String uriString = "content://info.pello.android.contentprovider.provider.Students/students/1";
+		String uriString = "content://info.pello.android.contentprovider.provider.Students/students/";
 		Uri uri = Uri.parse(uriString);
 		
 		// We finally make the request to the content provider
@@ -60,7 +63,41 @@ public class MainActivity extends Activity {
 		
 		textViewResult.setText(result);
 	}
-	
+
+	/**
+	 * called when button is clicked
+	 * It will try to get data from Content Provider.
+	 * @param v
+	 */
+	public void getSingleRow(View v) {
+		Log.d("PELLODEBUG","Client> button 2 pressed.");
+		String result = "";
+		String parameter = editText.getText().toString();
+		String uriString = "content://info.pello.android.contentprovider.provider.Students/students/" + parameter;
+		Uri uri = Uri.parse(uriString);
+
+		// We finally make the request to the content provider
+		Cursor cursor = getContentResolver().query(
+				uri,   // The content URI of the words table
+				new String[]{""},
+				"",                        // The columns to return for each row
+				new String[]{""},                     // Selection criteria
+				"");
+
+
+
+		// We get results in the cursor instance.
+		if (cursor.moveToFirst()) {
+			result += cursor.getLong(0) + ", ";
+			result += cursor.getString(1) + ", ";
+			result += cursor.getString(2) + "\n";
+		} else {
+			result += "None found";
+		}
+
+		textViewResult.setText(result);
+	}
+
 	/**
 	 * called when second button is clicked
 	 * It will try to get data from Content Provider.
