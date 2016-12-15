@@ -47,12 +47,10 @@ public class MainActivity extends Activity {
 		// We finally make the request to the content provider
 		Cursor cursor = getContentResolver().query(
 			    uri,   // The content URI of the words table
-			    new String[]{""},
-			    "",                        // The columns to return for each row
-			    new String[]{""},                     // Selection criteria
-			    "");
-		
-
+			    new String[]{""},		// The columns to return for each row
+			    "",                     // Selection criteria
+			    new String[]{""},       // Criteria values
+			    "");					// order clauses
 
 		// We get results in the cursor instance.
 		while (cursor.moveToNext()) {
