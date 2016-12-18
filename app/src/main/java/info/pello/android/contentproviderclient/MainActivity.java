@@ -104,7 +104,7 @@ public class MainActivity extends Activity {
 	public void insertData (View v) {
 		Log.d("PELLODEBUG","Client> button pressed.");
 		String result = "";
-		String uriString = "content://info.pello.android.contentprovider.provider.Students/students/insert";
+		String uriString = "content://info.pello.android.contentprovider.provider.Students/students";
 		Uri uri = Uri.parse(uriString);
 		ContentValues contentValues = new ContentValues();
 		contentValues.put("_id", System.currentTimeMillis());

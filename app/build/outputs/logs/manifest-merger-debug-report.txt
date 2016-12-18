@@ -15,10 +15,6 @@ ADDED from C:\code\tmp\a\AndroidContentProviderClient\app\src\main\AndroidManife
 		INJECTED from C:\code\tmp\a\AndroidContentProviderClient\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\code\tmp\a\AndroidContentProviderClient\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#info.pello.android.contentprovider.provider.READ
-ADDED from C:\code\tmp\a\AndroidContentProviderClient\app\src\main\AndroidManifest.xml:6:1-84
-	android:name
-		ADDED from C:\code\tmp\a\AndroidContentProviderClient\app\src\main\AndroidManifest.xml:6:18-81
 uses-sdk
 ADDED from C:\code\tmp\a\AndroidContentProviderClient\app\src\main\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion

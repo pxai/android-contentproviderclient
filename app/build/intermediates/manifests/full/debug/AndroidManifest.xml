@@ -2,13 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="info.pello.android.contentproviderclient"
     android:versionCode="1"
-    android:versionName="1.0" >
-
+    android:versionName="1.0" > <!-- uses-permission android:name="info.pello.android.contentprovider.provider.READ" / -->
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-
-    <uses-permission android:name="info.pello.android.contentprovider.provider.READ" />
 
     <application
         android:allowBackup="true"
